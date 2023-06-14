@@ -1,12 +1,22 @@
-<%= @results%>
+<table class="table table-striped">
+	<thead>	
+		<tr>
+			<th>Name</th>
+			<th>Datetime</th>
+			<th>Phone</th>
+			<th>Color</th>
+		</tr>
+	</thead>
 
-<table class="table">
+	<tbody>
 	<% @results.each do |row| %>
-	<tr>
-		<td><%= row['username'] %></td>
-		<td><%= row['datetime'] %></td>
-		<td><%= row['phone'] %></td>
-		<td><%= row['color'] %></td>
-	</tr>
-	<%end%>
+		<tr>
+			<td><%= row['username'] %></td>
+			<td><%= row['datetime'] %></td>
+			<td><%= row['phone'] %></td>
+			<td><%= row['color'] %></td>
+		</tr>
+		<%end%>
+	</tbody>
+
 </table>
